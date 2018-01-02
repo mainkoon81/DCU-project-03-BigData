@@ -47,6 +47,16 @@ np.exp(-1.4637), 100/23.14
 
 >For each min less spent on the transaction, the chance of fraud is 4.32 times more likely...holding the 'weekday' constant. 
 
+**Diagnostics**
+```
+import numpy as np
+import pandas as pd
+
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, precision_score, recall_score, accuracy_score
+from sklearn.model_selection import train_test_split
+np.random.seed(42)
+```
 
 
 
