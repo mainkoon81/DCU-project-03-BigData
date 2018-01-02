@@ -1,6 +1,6 @@
 # study-ML-intro
 
-## Logistic Regression
+## 1. Logistic Regression
 <img src="https://user-images.githubusercontent.com/31917400/34471521-d497e2bc-ef43-11e7-8e70-5d232b659be0.jpg" />
 
 **Typical Approach**
