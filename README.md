@@ -47,6 +47,11 @@ np.exp(-1.4637), 100/23.14
 
 >For each min less spent on the transaction, the chance of fraud is 4.32 times more likely...holding the 'weekday' constant. 
 
+*Note: When you find the ordinal variable with numbers...Need to convert to the categorical variable, then
+```
+df['columns'].astype(str).value_counts()
+```
+
 **Diagnostics**
 ```
 import numpy as np
