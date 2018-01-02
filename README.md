@@ -37,6 +37,7 @@ result.summary()
 
 Coeff-interpret: we need to exponentiate our coefficients before interpreting them.
 ```
+# np.exp(result.params)
 np.exp(2.5465)
 np.exp(-1.4637), 100/23.14
 ```
