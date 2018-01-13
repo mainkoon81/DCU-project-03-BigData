@@ -1,5 +1,7 @@
 # study-ML-intro
 
+<img src="https://user-images.githubusercontent.com/31917400/34910969-bf8b8bee-f8b7-11e7-9d23-8d54d974c128.jpg" />
+
 ## 1. Logistic Regression
 <img src="https://user-images.githubusercontent.com/31917400/34471521-d497e2bc-ef43-11e7-8e70-5d232b659be0.jpg" />
 
@@ -63,6 +65,8 @@ from sklearn.model_selection import train_test_split
 np.random.seed(42)
 ```
 
+## Naive Bayes
+ - 
 
 
 
