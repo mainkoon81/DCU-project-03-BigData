@@ -65,7 +65,7 @@ from sklearn.model_selection import train_test_split
 np.random.seed(42)
 ```
 
-## Naive Bayes
+## 2. Naive Bayes
 To find a DecisionSurface !
  - Library: sklearn.naive_bayes (Gaussian Naive Bayes)
  
