@@ -69,7 +69,7 @@ np.random.seed(42)
 **To find a DecisionSurface !**    
  - Library: sklearn.naive_bayes (Gaussian Naive Bayes)
  
- - step.1
+ - Example
    - Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
 ```
 def NBAccuracy(features_train, labels_train, features_test, labels_test):
@@ -88,6 +88,8 @@ def NBAccuracy(features_train, labels_train, features_test, labels_test):
 ```
 It throws an accuracy of 88.4% which means 88.4% of the points are being correctly labelled by our classifier-'clf' when we use our test-set ! 
 
+>__Bayes Rule:__ 
+<img src="https://user-images.githubusercontent.com/31917400/34920230-5115b6b6-f967-11e7-9493-5f6662f1ce70.JPG" />
 
 
 
