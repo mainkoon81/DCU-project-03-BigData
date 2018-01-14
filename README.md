@@ -66,7 +66,9 @@ np.random.seed(42)
 ```
 
 ## Naive Bayes
- - 
+To find a DecisionSurface !
+ - Library: sklearn.naive_bayes (Gaussian Naive Bayes)
+ 
 
 
 
