@@ -65,6 +65,24 @@ from sklearn.model_selection import train_test_split
 np.random.seed(42)
 ```
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 2. Naive Bayes
 **To find a DecisionSurface !**    
  - Library: sklearn.naive_bayes (Gaussian Naive Bayes)
@@ -91,7 +109,11 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 >__Bayes Rule:__ 
 <img src="https://user-images.githubusercontent.com/31917400/34920230-5115b6b6-f967-11e7-9493-5f6662f1ce70.JPG" />
 
-
+Semantically, what Bayes rule does is it incorporates some evidence from the test into our **prior** to arrive at a **posterior**.
+ - Prior: Probability before running a test.
+ - test evidence
+ - Posterior: 
+<img src="https://user-images.githubusercontent.com/31917400/34921660-73b52056-f97d-11e7-87a8-d2aae8257248.jpg" />
 
 
 
