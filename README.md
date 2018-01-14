@@ -66,9 +66,29 @@ np.random.seed(42)
 ```
 
 ## 2. Naive Bayes
-To find a DecisionSurface !
+**To find a DecisionSurface !**    
  - Library: sklearn.naive_bayes (Gaussian Naive Bayes)
  
+ - step.1
+   - Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
+```
+def NBAccuracy(features_train, labels_train, features_test, labels_test):
+    from sklearn.naive_bayes import GaussianNB
+    clf = GaussianNB()    ### create classifier
+    clf.fit(features_train, labels_train)    ### fit the classifier on the training features and labels
+    pred = clf.predict(features_test)    ### use the trained classifier to predict labels for the test features
+
+    ### calculate and return the accuracy on the test data. 
+    accuracy = clf.score(features_test, labels_test)
+    return(accuracy)
+    
+    ### or we can import 'sklearn accuracy'
+    from sklearn.metrics import accuracy_score
+    print(accuracy_score(pred, labels_test))
+```
+It throws an accuracy of 88.4% which means 88.4% of the points are being correctly labelled by our classifier-'clf' when we use our test-set ! 
+
+
 
 
 
