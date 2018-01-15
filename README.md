@@ -116,7 +116,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 <img src="https://user-images.githubusercontent.com/31917400/34922733-ba1c1ce4-f98b-11e7-9cfa-2ec5c0254ceb.jpg" />
 
 *Algorithm of Bayes Rule
-<img src="https://user-images.githubusercontent.com/31917400/34922735-bc7d8888-f98b-11e7-9908-49bf7591a764.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/34922812-bebf5cec-f98c-11e7-8de5-8d1a6616dd78.jpg" />
 
 
 
