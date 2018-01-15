@@ -121,7 +121,8 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 *Example_1. Text Forensic and Learning (ex. Whose email would it be ? Sent from Chris or Sara ?)
 <img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
 
-*Example_2. Who would be the author of a piece of text? 
+## 3. Support Vector Machine
+
 
 
 
