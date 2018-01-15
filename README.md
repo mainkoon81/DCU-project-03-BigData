@@ -118,7 +118,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 *Algorithm of Bayes Rule
 <img src="https://user-images.githubusercontent.com/31917400/34922812-bebf5cec-f98c-11e7-8de5-8d1a6616dd78.jpg" />
 
-*Text Learning (ex. Whose email would it be ?)
+*Text Learning (ex. Whose email would it be ? Sent from Chris or Sara ?)
 <img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
 
 
