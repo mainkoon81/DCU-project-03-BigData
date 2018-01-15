@@ -113,7 +113,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
  - Prior: Probability before running a test.
  - test evidence
  - Posterior: 
-<img src="https://user-images.githubusercontent.com/31917400/34922733-ba1c1ce4-f98b-11e7-9cfa-2ec5c0254ceb.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/34952133-a0446ba2-fa10-11e7-882d-20d2614bc634.jpg" />
 
 *Algorithm of Bayes Rule
 <img src="https://user-images.githubusercontent.com/31917400/34922812-bebf5cec-f98c-11e7-8de5-8d1a6616dd78.jpg" />
