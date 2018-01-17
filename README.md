@@ -122,7 +122,9 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 <img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
 
 ## 3. Support Vector Machine
+<img src="https://user-images.githubusercontent.com/31917400/35054568-c4ca8d40-fba4-11e7-8562-48559c42ae94.jpg" width="400" height="150" />
 
+ - Margine is a distance. The separating line should be most robust to classification errors. The margine aims to maximizes the robustness of the result. 
 
 
 
