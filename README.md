@@ -125,7 +125,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 SVM is a set of supervised learning methods used for classification, regression and **outliers detection**.
 <img src="https://user-images.githubusercontent.com/31917400/35055161-61987186-fba6-11e7-8c97-b66617e8161c.jpg" width="750" height="150" />
 
- - Margine is a distance. The separating line should be most robust to classification errors. The margine aims to maximizes the robustness of the result. 
+ - Margine is a maximum distance from each nearest point. The separating line should be most robust to classification errors. The margine aims to maximizes the robustness of the result. 
 
 
 
