@@ -85,22 +85,20 @@ np.random.seed(42)
 
 ## 2. Naive Bayes
 **To find a DecisionSurface !**    
- - Library: sklearn.naive_bayes (Gaussian Naive Bayes)
- 
- - Example
-   - Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
+ - Library: sklearn.naive_bayes (Gaussian)
+ - Example: Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
 ```
 def NBAccuracy(features_train, labels_train, features_test, labels_test):
     from sklearn.naive_bayes import GaussianNB
-    clf = GaussianNB()    ### create classifier
-    clf.fit(features_train, labels_train)    ### fit the classifier on the training features and labels
-    pred = clf.predict(features_test)    ### use the trained classifier to predict labels for the test features
+    clf = GaussianNB()    ### create classifier ###
+    clf.fit(features_train, labels_train)    ### fit the classifier on the training features and labels ###
+    pred = clf.predict(features_test)    ### use the trained classifier to predict labels for the test features ###
 
-    ### calculate and return the accuracy on the test data. 
+    ### calculate and return the accuracy on the test data. ### 
     accuracy = clf.score(features_test, labels_test)
     return(accuracy)
     
-    ### or we can import 'sklearn accuracy'
+    ### or we can use 'sklearn accuracy' ###
     from sklearn.metrics import accuracy_score
     print(accuracy_score(pred, labels_test))
 ```
@@ -140,10 +138,34 @@ Margine is a maximum distance to each nearest point. The separating line should 
 In sklearn, `SVC()`, `NuSVC()`, `LinearSVC()` accept slightly different sets of parameters and have different mathematical formulations, but take as input two arrays: 
  - an array **X** of size `[n_samples, n_features]`holding the training samples 
  - an array **y** of class labels (strings or integers), size `[n_samples]`
+ - Library: sklearn.svm 
+ - Example: 
+```
+import matplotlib.pyplot as plt
+import copy
+import numpy as np
+import pylab as pl
 
+import sys
+from class_vis import prettyPicture
+from prep_terrain_data import makeTerrainData
 
+features_train, labels_train, features_test, labels_test = makeTerrainData()
 
+from sklearn.svm import SVC
+clf = SVC(kernel="linear")
+X = features_train
+y = labels_train
+clf.fit(X, y)
 
+pred = clf.predict(features_test)
+
+from sklearn.metrics import accuracy_score
+acc = accuracy_score(pred, labels_test)
+
+def submitAccuracy():
+    return acc
+```
 
  
 
