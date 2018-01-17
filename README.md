@@ -135,7 +135,7 @@ Margine is a maximum distance to each nearest point. The separating line should 
    - If the number of features is much greater than the number of samples, avoid **over-fitting** in choosing Kernel functions and **regularization term** is crucial.
    - SVMs do not directly provide probability estimates, these are calculated using an expensive **five-fold cross-validation**. 
 
-In sklearn, `SVC()`, `NuSVC()`, `LinearSVC()` accept slightly different sets of parameters and have different mathematical formulations, but take as input two arrays: 
+In sklearn.svm, `SVC()`, `NuSVC()`, `LinearSVC()` accept slightly different sets of parameters and have different mathematical formulations, but take as input two arrays: 
  - an array **X** of size `[n_samples, n_features]`holding the training samples 
  - an array **y** of class labels (strings or integers), size `[n_samples]`
  - Library: sklearn.svm 
