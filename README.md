@@ -122,10 +122,30 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 <img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
 
 ## 3. Support Vector Machine
+**To find a DecisionSurface !**    
 SVM is a set of supervised learning methods used for classification, regression and **outliers detection**.
 <img src="https://user-images.githubusercontent.com/31917400/35055161-61987186-fba6-11e7-8c97-b66617e8161c.jpg" width="750" height="150" />
 
- - Margine is a maximum distance from each nearest point. The separating line should be most robust to classification errors. The margine aims to maximizes the robustness of the result. 
+Margine is a maximum distance to each nearest point. The separating line should be most robust to classification errors. The margine aims to maximizes the robustness of the result....As Much Separation b/w two classifications as possible. 
+
+ - The advantages of support vector machines are:
+   - Effective in cases where number of dimensions is greater than the number of samples.
+   - Uses a subset of training points in the decision function called `support vectors`, so it is also memory efficient.
+   - Versatile: different **Kernel functions** can be specified for the decision function(Common kernels are provided, but it is also possible to specify custom kernels).
+   
+ - The disadvantages of support vector machines include:
+   - If the number of features is much greater than the number of samples, avoid **over-fitting** in choosing Kernel functions and **regularization term** is crucial.
+   - SVMs do not directly provide probability estimates, these are calculated using an expensive **five-fold cross-validation**. 
+
+In sklearn, `SVC()`, `NuSVC()`, `LinearSVC()` accept slightly different sets of parameters and have different mathematical formulations, but take as input two arrays: 
+ - an array **X** of size `[n_samples, n_features]`holding the training samples 
+ - an array **y** of class labels (strings or integers), size `[n_samples]`
+
+
+
+
+
+ 
 
 
 
