@@ -168,9 +168,10 @@ def submitAccuracy():
 ```
 
 ### Non-Linear SVM
- - 
+ - Introducing New Features 'Z' or 'transformed X or Y' causes 'hyperplane.' Z is non-negative because it's a distance from the origin. 
+<img src="https://user-images.githubusercontent.com/31917400/35122461-b94d14f4-fc96-11e7-9e22-1e3a76e58e16.jpg" /> 
 
-
+ - Kernel Trick: There are functions taking a low dimensional given 'input space' and the added 'feature space' then map it to a very high dimensional space - Kernel function. It makes the separation then takes the solution and go back to the original space. It sets the dataset apart where the division line is non-linear.  
 
 
 
