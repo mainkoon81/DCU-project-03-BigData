@@ -134,12 +134,6 @@ Margine is a maximum distance to each nearest point. The separating line should 
  - The disadvantages of support vector machines include:
    - If the number of features is much greater than the number of samples, avoid **over-fitting** in choosing Kernel functions and **regularization term** is crucial.
    - SVMs do not directly provide probability estimates, these are calculated using an expensive **five-fold cross-validation**. 
-
-In sklearn.svm, `SVC()`, `NuSVC()`, `LinearSVC()` accept slightly different sets of parameters and have different mathematical formulations, but take as input two arrays: 
- - an array **X** of size `[n_samples, n_features]`holding the training samples 
- - an array **y** of class labels (strings or integers), size `[n_samples]`
- - Library: sklearn.svm 
- - Example: 
 ```
 import matplotlib.pyplot as plt
 import copy
@@ -151,7 +145,13 @@ from class_vis import prettyPicture
 from prep_terrain_data import makeTerrainData
 
 features_train, labels_train, features_test, labels_test = makeTerrainData()
-
+```
+In sklearn.svm, `SVC()`, `NuSVC()`, `LinearSVC()` accept slightly different sets of parameters and have different mathematical formulations, but take as input two arrays: 
+ - an array **X** of size `[n_samples, n_features]`holding the training samples 
+ - an array **y** of class labels (strings or integers), size `[n_samples]`
+ - Library: sklearn.svm 
+ - Example: 
+```
 from sklearn.svm import SVC
 clf = SVC(kernel="linear")
 X = features_train
