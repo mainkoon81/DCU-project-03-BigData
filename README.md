@@ -58,32 +58,19 @@ df['columns'].astype(str).value_counts()
 ```
 import numpy as np
 import pandas as pd
-
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, precision_score, recall_score, accuracy_score
 from sklearn.model_selection import train_test_split
-np.random.seed(42)
 ```
-
-**Confusion Matrix**
- - Recall: 'reality'(Out of all the items that are **truly positive**): TP / TP+FN
- - Precision 'argued'(Out of all the items **labeled as positive**): TP / TP+FP
+ - __Confusion Matrix__
+   - Recall: 'reality'(Out of all the items that are **truly positive**): TP / TP+FN
+   - Precision 'argued'(Out of all the items **labeled as positive**): TP / TP+FP
 <img src="https://user-images.githubusercontent.com/31917400/35222288-54f13ad0-ff75-11e7-819c-36eae7e370c1.jpg" />
 
+ - Next, it is useful to split your data into training and testing data to assure your model can predict well not only on the data it was fit to, but also on data that the model has never seen before. Proving the model performs well on test data assures that you have a model that will do well in the future use cases.** 
+```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+```
 
 
 ## 2. Naive Bayes
