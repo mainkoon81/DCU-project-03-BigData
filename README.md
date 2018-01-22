@@ -67,11 +67,13 @@ from sklearn.model_selection import train_test_split
    - Precision 'argued'(Out of all the items **labeled as positive**): TP / TP+FP
 <img src="https://user-images.githubusercontent.com/31917400/35222988-c9570fce-ff77-11e7-82b9-7ccd3855bd50.jpg" />
 
- - Next, it is useful to split your data into training and testing data to assure your model can predict well not only on the data it was fit to, but also on data that the model has never seen before. Proving the model performs well on test data assures that you have a model that will do well in the future use cases.** 
+ - Next, it is useful to split your data into training and testing data to assure your model can predict well not only on the data it was fit to, but also on data that the model has never seen before. Proving the model performs well on test data assures that you have a model that will do well in the future use cases. Let's pull off X and y first.
 ```
+X = df[['intercept', 'weekday', 'duration']]
+y = df['fraud']
 
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10, randome_state=42)
 ```
-
 
 ## 2. Naive Bayes
 **To find a DecisionSurface !**    
