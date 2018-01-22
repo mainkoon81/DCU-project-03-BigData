@@ -67,12 +67,38 @@ from sklearn.model_selection import train_test_split
    - Precision 'argued'(Out of all the items **labeled as positive**): TP / TP+FP
 <img src="https://user-images.githubusercontent.com/31917400/35222988-c9570fce-ff77-11e7-82b9-7ccd3855bd50.jpg" />
 
- - Next, it is useful to split your data into training and testing data to assure your model can predict well not only on the data it was fit to, but also on data that the model has never seen before. Proving the model performs well on test data assures that you have a model that will do well in the future use cases. Let's pull off X and y first.
+ - Next, it is useful to split your data into training and testing data to assure your model can predict well not only on the data it was fit to, but also on data that the model has never seen before. Proving the model performs well on test data assures that you have a model that will do well in the future use cases. Let's pull off X and y first. Create your test set as 10% of the data, and use a random state of 0. 
 ```
 X = df[['intercept', 'weekday', 'duration']]
 y = df['fraud']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10, randome_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.10, randome_state=0)
+```
+The usual steps are:
+ - Instantiate
+ - Fit (on train)
+ - Predict (on test)
+ - Score (compare predict to test)
+```
+log_model = LogisticRegression()
+log_model.fit(X_train, y_train)
+pred = log_model.predict(X_test)
+
+print(accuracy_score(y_test, pred))
+print(recall_score(y_test, pred))
+print(precision_score(y_test, pred))
+confusion_matrix(y_test, pred)
+```
+Roc Curve: The ideal case is for this to shoot all the way to the upper left hand corner. 
+```
+from ggplot import *
+from sklearn.metrics import roc_curve, auc
+
+preds = log_mod.predict_proba(X_test)[:,1]
+fpr, tpr, _ = roc_curve(y_test, preds)
+
+df = pd.DataFrame(dict(fpr=fpr, tpr=tpr))
+ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ```
 
 ## 2. Naive Bayes
