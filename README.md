@@ -65,7 +65,7 @@ from sklearn.model_selection import train_test_split
  - __Confusion Matrix__
    - Recall: 'reality'(Out of all the items that are **truly positive**): TP / TP+FN
    - Precision 'argued'(Out of all the items **labeled as positive**): TP / TP+FP
-<img src="https://user-images.githubusercontent.com/31917400/35222288-54f13ad0-ff75-11e7-819c-36eae7e370c1.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/35222988-c9570fce-ff77-11e7-82b9-7ccd3855bd50.jpg" />
 
  - Next, it is useful to split your data into training and testing data to assure your model can predict well not only on the data it was fit to, but also on data that the model has never seen before. Proving the model performs well on test data assures that you have a model that will do well in the future use cases.** 
 ```
