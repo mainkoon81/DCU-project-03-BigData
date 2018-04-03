@@ -143,6 +143,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 
 ## 3. Support Vector Machine
 **[Find a DecisionSurface!]** 
+
 SVM is a set of supervised learning methods used for 
  - classification
  - regression  
@@ -154,7 +155,8 @@ Margine is a maximum distance to each nearest point. The separating line should 
  - The advantages of support vector machines are:
    - Effective in cases where number of dimensions is greater than the number of samples.
    - Uses a subset of training points in the decision function called `support vectors`, so it is also memory efficient.
-   - Versatile: different **Kernel functions** can be specified for the decision function(Common kernels are provided, but it is also possible to specify custom kernels). Using a **kernel trick**, Linear DecisionSurf -> NonLinear DecisionSurf    
+   - Versatile: different **Kernel functions** can be specified for the decision function(Common kernels are provided, but it is also possible to specify custom kernels). 
+   - Using a **kernel trick**, Linear DecisionSurf -> NonLinear DecisionSurf    
 
  - The disadvantages of support vector machines include:
    - If the number of features is much greater than the number of samples, avoid **over-fitting** in choosing Kernel functions and **regularization term** is crucial.
@@ -213,7 +215,10 @@ In SVM, tuning the parameters can be a lot of work, but just sit tight for now--
 
 
 ## DecisionTree
+**[Find a DecisionSurface!]** 
 
+Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making. 
+<img src="https://user-images.githubusercontent.com/31917400/38253495-b3ae81f2-374e-11e8-8721-1a2ab32bd310.jpg" /> 
 
 
 
