@@ -103,8 +103,10 @@ df = pd.DataFrame(dict(fpr=fpr, tpr=tpr))
 ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ```
 
+------------------------------------------------------
 ## 2. Naive Bayes
-**To find a DecisionSurface !**    
+**[Find a DecisionSurface!]** 
+
  - Library: sklearn.naive_bayes (Gaussian)
  - Example: Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
 ```
@@ -140,8 +142,11 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 <img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
 
 ## 3. Support Vector Machine
-**To find a DecisionSurface !**    
-SVM is a set of supervised learning methods used for classification, regression and **outliers detection**.
+**[Find a DecisionSurface!]** 
+SVM is a set of supervised learning methods used for 
+ - classification
+ - regression  
+ - **outliers detection**
 <img src="https://user-images.githubusercontent.com/31917400/35055161-61987186-fba6-11e7-8c97-b66617e8161c.jpg" width="750" height="150" />
 
 Margine is a maximum distance to each nearest point. The separating line should be most robust to classification errors. The margine aims to maximizes the robustness of the result....As Much Separation b/w two classifications as possible. 
@@ -149,8 +154,8 @@ Margine is a maximum distance to each nearest point. The separating line should 
  - The advantages of support vector machines are:
    - Effective in cases where number of dimensions is greater than the number of samples.
    - Uses a subset of training points in the decision function called `support vectors`, so it is also memory efficient.
-   - Versatile: different **Kernel functions** can be specified for the decision function(Common kernels are provided, but it is also possible to specify custom kernels).
-   
+   - Versatile: different **Kernel functions** can be specified for the decision function(Common kernels are provided, but it is also possible to specify custom kernels). Using a **kernel trick**, Linear DecisionSurf -> NonLinear DecisionSurf    
+
  - The disadvantages of support vector machines include:
    - If the number of features is much greater than the number of samples, avoid **over-fitting** in choosing Kernel functions and **regularization term** is crucial.
    - SVMs do not directly provide probability estimates, these are calculated using an expensive **five-fold cross-validation**. 
@@ -207,7 +212,7 @@ SVMs "doesn't work well with lots and lots of noise, so when the classes are ver
 In SVM, tuning the parameters can be a lot of work, but just sit tight for now--toward the end of the class we will introduce you to GridCV, a great sklearn tool that can find an optimal parameter tune almost automatically.
 
 
-
+## DecisionTree
 
 
 
