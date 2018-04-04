@@ -163,9 +163,9 @@ Margine is a maximum distance to each nearest point. The separating line should 
    - SVMs do not directly provide probability estimates, these are calculated using an expensive **five-fold cross-validation**. 
 ```
 import matplotlib.pyplot as plt
-import copy
 import numpy as np
 import pylab as pl
+import copy
 
 import sys
 from class_vis import prettyPicture
@@ -220,7 +220,8 @@ In SVM, tuning the parameters can be a lot of work, but just sit tight for now--
 Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making. 
 <img src="https://user-images.githubusercontent.com/31917400/38253495-b3ae81f2-374e-11e8-8721-1a2ab32bd310.jpg" /> 
 
-
+```
+```
 
 
 
