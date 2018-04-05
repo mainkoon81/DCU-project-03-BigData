@@ -221,7 +221,23 @@ Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear
 <img src="https://user-images.githubusercontent.com/31917400/38253495-b3ae81f2-374e-11e8-8721-1a2ab32bd310.jpg" /> 
 
 ```
+import matplotlib.pyplot as plt
+import numpy as np
+import pylab as pl
+
+import sys
+from class_vis import prettyPicture, output_image
+from prep_terrain_data import makeTerrainData
+features_train, labels_train, features_test, labels_test = makeTerrainData()
 ```
+We build two DecisionTree classifiers; one with parameter(min_samples_split=2), and the other with (min_samples_split=50). What's the difference in accuracy ?
+
+<img src="https://user-images.githubusercontent.com/31917400/38373940-5d7c55fa-38ea-11e8-936f-7de3c3455e36.jpg" width="300" height="170" /> And how to prevent **overfitting** ? 
+
+```
+
+
+
 
 
 
