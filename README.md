@@ -279,7 +279,7 @@ import math
 Which is 1.
 
  - DecisionTree maximizes the **Information Gain**
-<img src="https://user-images.githubusercontent.com/31917400/38379058-77c82d46-38f7-11e8-97f3-4583e6b0255b.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/38381197-f0b8b832-38fd-11e8-83da-db0be6a464ec.jpg" />  
 
 
 
