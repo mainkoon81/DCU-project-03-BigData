@@ -281,6 +281,7 @@ Which is 1.
  - DecisionTree tries to maximize the **Information Gain**
 <img src="https://user-images.githubusercontent.com/31917400/38381197-f0b8b832-38fd-11e8-83da-db0be6a464ec.jpg" />  
 
+------------------------------------------------------
 
 
 
