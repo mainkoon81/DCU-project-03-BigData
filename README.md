@@ -268,9 +268,18 @@ def submitAccuracies():
 ### DecisionTree & Entropy
  - **Entropy:** is a measure of **[impurity]** in a bunch of examples...Let's say it's an opposite of purity..   
  - **Entropy** controls how a DecisionTree decides **where to split the data** to make subsets as pure as possible...
-<img src="https://user-images.githubusercontent.com/31917400/38377686-79551a1a-38f3-11e8-9a91-59a525d82a7f.jpg" />  
+<img src="https://user-images.githubusercontent.com/31917400/38379058-77c82d46-38f7-11e8-97f3-4583e6b0255b.jpg" />  
 
- - 
+If we have a categorical veriable that consists of entry (a, b). Let's say p(a)=0.5, p(b)=0.5, then our entropy is
+```
+import math
+
+-0.5*math.log(0.5, 2) -0.5*math.log(0.5, 2)
+```
+Which is 1.
+
+
+
 
 
 
