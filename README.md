@@ -268,8 +268,9 @@ def submitAccuracies():
 ### DecisionTree & Entropy
  - **Entropy:** is a measure of **[impurity]** in a bunch of examples.  
  - **Entropy** controls how a DecisionTree decides where to split the data to make subsets as pure as possible...
-<img src="https://user-images.githubusercontent.com/31917400/38376952-ab73c5de-38f1-11e8-84b8-902697237e5e.jpg" width="400" height="170" />  
+<img src="https://user-images.githubusercontent.com/31917400/38377313-89fdefbe-38f2-11e8-9881-c5cb3488281a.jpg" />  
 
+ - 
 
 
 
