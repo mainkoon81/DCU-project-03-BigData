@@ -141,6 +141,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 *Example_1. Text Forensic and Learning (ex. Whose email would it be ? Sent from Chris or Sara ?)
 <img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
 
+------------------------------------------------------
 ## 3. Support Vector Machine
 **[Find a DecisionSurface!]** 
 
@@ -215,8 +216,8 @@ SVMs "doesn't work well with lots and lots of noise, so when the classes are ver
 
 In SVM, tuning the parameters can be a lot of work, but just sit tight for now--toward the end of the class we will introduce you to GridCV, a great sklearn tool that can find an optimal parameter tune almost automatically.
 
-
-## DecisionTree
+------------------------------------------------------
+## 4. DecisionTree
 **[Find a DecisionSurface!]** 
 
 Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making. 
@@ -264,7 +265,10 @@ def submitAccuracies():
           "acc_min_samples_split_50":round(acc_min_samples_split_50, 3)}
 ```
 
-
+### DecisionTree & Entropy
+ - **Entropy:** is a measure of **[impurity]** in a bunch of examples.  
+ - **Entropy** controls how a DecisionTree decides where to split the data to make subsets as pure as possible...
+<img src="https://user-images.githubusercontent.com/31917400/38376952-ab73c5de-38f1-11e8-84b8-902697237e5e.jpg" width="400" height="170" />  
 
 
 
