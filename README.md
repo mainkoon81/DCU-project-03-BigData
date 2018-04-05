@@ -186,7 +186,9 @@ y = labels_train
 clf.fit(X, y)
 
 pred = clf.predict(features_test)
-
+```
+Accuracy ?
+```
 from sklearn.metrics import accuracy_score
 acc = accuracy_score(pred, labels_test)
 
@@ -230,15 +232,37 @@ from class_vis import prettyPicture, output_image
 from prep_terrain_data import makeTerrainData
 features_train, labels_train, features_test, labels_test = makeTerrainData()
 ```
-We build two DecisionTree classifiers; one with parameter(min_samples_split=2), and the other with (min_samples_split=50). What's the difference in accuracy ?
+We build two DecisionTree classifiers; one with parameter(min_samples_split=2), and the other with (min_samples_split=50). What's the difference in accuracy ? And how to prevent **overfitting** ? 
 
-<img src="https://user-images.githubusercontent.com/31917400/38373940-5d7c55fa-38ea-11e8-936f-7de3c3455e36.jpg" width="300" height="170" /> And how to prevent **overfitting** ? 
+<img src="https://user-images.githubusercontent.com/31917400/38373940-5d7c55fa-38ea-11e8-936f-7de3c3455e36.jpg" width="300" height="170" /> 
 
+Store your predictions in a list named 'pred_2', 'pred_50'.
 ```
+from sklearn import tree
 
+clf_2 = tree.DecisionTreeClassifier(min_samples_split=2)
+clf_50 = tree.DecisionTreeClassifier(min_samples_split=50)
 
+X = features_train
+y = labels_train
 
+clf_2.fit(X, y)
+clf_50.fit(X, y)
 
+pred_2 = clf_2.predict(features_test)
+pred_50 = clf_50.predict(features_test)
+```
+Accuracy ? Whose accuracy is better ? clf_2 or clf_50 ? Well..min_samples_split=2 is too much..overfitting giving less accuracy.
+```
+from sklearn.metrics import accuracy_score
+
+acc_min_samples_split_2 = accuracy_score(pred_2, labels_test)
+acc_min_samples_split_50 = accuracy_score(pred_50, labels_test)
+
+def submitAccuracies():
+  return {"acc_min_samples_split_2":round(acc_min_samples_split_2, 3),
+          "acc_min_samples_split_50":round(acc_min_samples_split_50, 3)}
+```
 
 
 
