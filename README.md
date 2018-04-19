@@ -5,6 +5,7 @@
 <img src="https://user-images.githubusercontent.com/31917400/35225294-d059a978-ff7f-11e7-9779-b3b51cca7549.jpg" />
 
 ## 1. Logistic Regression
+**[Find a DecisionSurface!]** 
 > PREDICTION: based on the the decision surf, we can guess 'pass/fail' of new student. 
 <img src="https://user-images.githubusercontent.com/31917400/39020884-52a18230-4426-11e8-976c-5af838cb29da.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/34471521-d497e2bc-ef43-11e7-8e70-5d232b659be0.jpg" />
