@@ -106,7 +106,7 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ------------------------------------------------------
 ## 2. Naive Bayes
 **[Find a DecisionSurface!]** 
-<img src="https://user-images.githubusercontent.com/31917400/34954221-88772364-fa17-11e7-9f46-fb3d91d94be3.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/39019180-5566df3e-4420-11e8-9f87-dad95387ce6c.jpg" />
 
  - Library: sklearn.naive_bayes (Gaussian)
  - Example: Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
