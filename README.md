@@ -6,8 +6,8 @@
 
 ## 1. Logistic Regression
 **[Find a DecisionSurface!]** 
-> PREDICTION: based on the the decision surf, we can guess 'pass/fail' of new student. 
-<img src="https://user-images.githubusercontent.com/31917400/39020884-52a18230-4426-11e8-976c-5af838cb29da.jpg" />
+> PREDICTION: based on the line best cut the data, we can guess 'pass/fail' of new student. 
+<img src="https://user-images.githubusercontent.com/31917400/39021406-93efa878-4428-11e8-8bac-04d841fbbf16.jpg" />
 <img src="https://user-images.githubusercontent.com/31917400/34471521-d497e2bc-ef43-11e7-8e70-5d232b659be0.jpg" />
 
 **Typical Approach**
