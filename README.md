@@ -106,9 +106,9 @@ ggplot(df, aes(x='fpr', y='tpr')) + geom_line() + geom_abline(linetype='dashed')
 ------------------------------------------------------
 ## 2. Naive Bayes
 **[Find a DecisionSurface!]** 
-<img src="https://user-images.githubusercontent.com/31917400/39019180-5566df3e-4420-11e8-9f87-dad95387ce6c.jpg" />
-
 > PREDICTION: when future emails come, we can combine these features to guess if they are spam or not. 
+
+<img src="https://user-images.githubusercontent.com/31917400/39019180-5566df3e-4420-11e8-9f87-dad95387ce6c.jpg" />
 
  - Library: sklearn.naive_bayes (Gaussian)
  - Example: Compute the accuracy of your Naive Bayes classifier. Accuracy is defined as the number of test points that are classified correctly divided by the total number of test points.
@@ -222,12 +222,12 @@ In SVM, tuning the parameters can be a lot of work, but just sit tight for now--
 ------------------------------------------------------
 ## 4. DecisionTree
 **[Find a DecisionSurface!]** 
+> PREDICTION: based on these features, we can guess the apps that the future users would download.  
 
 Unlike SVM using a kernel trick, **DecisionTree** use a trick that lets a linear-DecisionSurf do Non-Linear-Decision making. 
 <img src="https://user-images.githubusercontent.com/31917400/38253495-b3ae81f2-374e-11e8-8721-1a2ab32bd310.jpg" /> 
 <img src="https://user-images.githubusercontent.com/31917400/39018803-08c158d6-441f-11e8-88f0-bc56f56d0df4.jpg" />  
 
-> PREDICTION: based on these features, we can guess the apps that the future users would download.  
 ```
 import matplotlib.pyplot as plt
 import numpy as np
