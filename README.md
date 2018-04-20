@@ -210,6 +210,8 @@ def submitAccuracy():
 ```
 
 ### Non-Linear SVM
+<img src="https://user-images.githubusercontent.com/31917400/39048647-2962d1ba-4496-11e8-82ee-b87365d27b07.jpg" />  
+
  - Introducing New Features 'Z' or 'transformed X or Y' causes 'hyperplane.' Z is non-negative because it's a distance from the origin. 
 <img src="https://user-images.githubusercontent.com/31917400/35122461-b94d14f4-fc96-11e7-9e22-1e3a76e58e16.jpg" /> 
 
@@ -298,9 +300,11 @@ Which is 1.
 ------------------------------------------------------
 
 ## 5. Neural Network
-**[Find a DecisionSurface!]** 
+**[Find a DecisionSurface!]**
+
 PREDICTION: 
 <img src="https://user-images.githubusercontent.com/31917400/39047770-10482214-4493-11e8-8103-03c5425c0534.jpg" />  
+
 
 
 
