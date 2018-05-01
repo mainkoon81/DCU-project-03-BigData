@@ -155,7 +155,7 @@ It throws an accuracy of 88.4% which means 88.4% of the points are being correct
 ## 3. Support Vector Machine
 **[Find a DecisionSurface!]**
 > PREDICTION: 
-<img src="https://user-images.githubusercontent.com/31917400/39047127-aa44b876-4490-11e8-8df8-5addf7b62452.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/39476600-673208d2-4d54-11e8-8f73-18871433f89c.jpg" />
 
 SVM is a set of supervised learning methods used for 
  - classification
