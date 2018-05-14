@@ -4,8 +4,6 @@
 
 <img src="https://user-images.githubusercontent.com/31917400/35225294-d059a978-ff7f-11e7-9779-b3b51cca7549.jpg" />
 
-
-
 ------------------------------------------------------
 ## 2. Naive Bayes
 **[Find a DecisionSurface!]** 
@@ -154,6 +152,49 @@ from email_preprocess import preprocess
 ```
 features_train, features_test, labels_train, labels_test = preprocess()
 ```
+
+
+------------------------------------------------------
+## 0. DecisionTree
+> Titanic: Make predictions about passenger survival
+ - Survived: Outcome of survival (0 = No; 1 = Yes)
+ - Pclass: Socio-economic class (1 = Upper class; 2 = Middle class; 3 = Lower class)
+ - Name: Name of passenger
+ - Sex: Sex of the passenger
+ - Age: Age of the passenger (Some entries contain NaN)
+ - SibSp: Number of siblings and spouses of the passenger aboard
+ - Parch: Number of parents and children of the passenger aboard
+ - Ticket: Ticket number of the passenger
+ - Fare: Fare paid by the passenger
+ - Cabin Cabin number of the passenger (Some entries contain NaN)
+ - Embarked: Port of embarkation of the passenger (C = Cherbourg; Q = Queenstown; S = Southampton)
+
+Since we're interested in the outcome of survival for each passenger or crew member, we can remove the Survived feature from this dataset and store it as its own separate variable outcomes. We will use these outcomes as our prediction targets.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## 1. NaiveBayes
 Q. Create and train a Naive Bayes classifier. Use it to make predictions for the test set. What is the accuracy?
