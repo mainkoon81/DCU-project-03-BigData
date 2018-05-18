@@ -27,7 +27,14 @@ Margine is a maximum distance to each nearest point. The separating line should 
 
  - The disadvantages of support vector machines include:
    - If the number of features is much greater than the number of samples, avoid **over-fitting** in choosing Kernel functions and **regularization term** is crucial.
-   - SVMs do not directly provide probability estimates, these are calculated using an expensive **five-fold cross-validation**. 
+   - SVMs do not directly provide probability estimates, these are calculated using an expensive **five-fold cross-validation**.
+
+The perceptron algorithm is a trick in which we started with a random line, and iterated on a step in order to slowly walk the line towards the misclassified points, so we can classify them correctly. However, we can also see this algorithm as an algorithm which minimizes an error function. 
+<img src="https://user-images.githubusercontent.com/31917400/40259702-298552a2-5aef-11e8-9820-21406a2e0386.jpg" />
+
+
+
+
 ```
 import matplotlib.pyplot as plt
 import numpy as np
