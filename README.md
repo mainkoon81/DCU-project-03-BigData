@@ -32,7 +32,9 @@ Margine is a maximum distance to each nearest point. The separating line should 
 > The perceptron algorithm is a trick in which we started with a random line, and iterated on a step in order to slowly walk the line towards the misclassified points, so we can classify them correctly. However, we can also see this algorithm as an algorithm which minimizes an error function. 
 <img src="https://user-images.githubusercontent.com/31917400/40259702-298552a2-5aef-11e8-9820-21406a2e0386.jpg" />
 
- - Error (Classification Error + Margin Error)
+ - Error (Margin Error + Classification Error)
+<img src="https://user-images.githubusercontent.com/31917400/40268051-8b7dc1b4-5b5e-11e8-8604-bb5e4468e452.jpg" />
+<img src="https://user-images.githubusercontent.com/31917400/40268052-8f949516-5b5e-11e8-8efc-d44acfa0eee3.jpg" />
  
 
 
