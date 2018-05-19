@@ -15,23 +15,25 @@ SVM is a set of supervised learning methods used for
  - classification
  - regression  
  - **outliers detection**
-<img src="https://user-images.githubusercontent.com/31917400/35055161-61987186-fba6-11e7-8c97-b66617e8161c.jpg" width="750" height="150" />
 
-Margine is a maximum distance to each nearest point. The separating line should be most robust to classification errors. The margine aims to maximizes the robustness of the result....As Much Separation b/w two classifications as possible. 
-
- - The advantages of support vector machines are:
+Pros & Cons
+ - > The advantages of support vector machines are:
    - Effective in cases where number of dimensions is greater than the number of samples.
    - Uses a subset of training points in the decision function called `support vectors`, so it is also memory efficient.
    - Versatile: different **Kernel functions** can be specified for the decision function(Common kernels are provided, but it is also possible to specify custom kernels). 
    - Using a **kernel trick**, Linear DecisionSurf -> NonLinear DecisionSurf    
 
- - The disadvantages of support vector machines include:
+ - > The disadvantages of support vector machines include:
    - If the number of features is much greater than the number of samples, avoid **over-fitting** in choosing Kernel functions and **regularization term** is crucial.
    - SVMs do not directly provide probability estimates, these are calculated using an expensive **five-fold cross-validation**.
+<img src="https://user-images.githubusercontent.com/31917400/35055161-61987186-fba6-11e7-8c97-b66617e8161c.jpg" width="750" height="150" />
 
-The perceptron algorithm is a trick in which we started with a random line, and iterated on a step in order to slowly walk the line towards the misclassified points, so we can classify them correctly. However, we can also see this algorithm as an algorithm which minimizes an error function. 
+Margine is a maximum distance to each nearest point. The separating line should be most robust to classification errors. The margine aims to maximizes the robustness of the result....As Much Separation b/w two classifications as possible. 
+> The perceptron algorithm is a trick in which we started with a random line, and iterated on a step in order to slowly walk the line towards the misclassified points, so we can classify them correctly. However, we can also see this algorithm as an algorithm which minimizes an error function. 
 <img src="https://user-images.githubusercontent.com/31917400/40259702-298552a2-5aef-11e8-9820-21406a2e0386.jpg" />
 
+ - Error (Classification Error + Margin Error)
+ 
 
 
 
