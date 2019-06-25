@@ -20,7 +20,8 @@ Stack Exchange Data Explorer (SEDE) https://data.stackexchange.com/stackoverflow
  - Find Top 10 terms used for each of the top 10 users by post score
 
 ### 2. Data Modeling with Postgres
-> __Introduction:__ A startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding **what songs users are listening to**. Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
+> __Introduction:__ A startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding **what songs users are listening to**. 
+ - > Currently, they don't have an easy way to query their data, which resides in a directory of JSON logs on user activity on the app, as well as a directory with JSON metadata on the songs in their app.
  - __Task:__ Create a database schema and ETL pipeline for this analysis. You'll be able to test your database and ETL pipeline by running queries given to you by the analytics team from Sparkify and compare your results with their expected results. you need to define fact and dimension tables for a star schema for a particular analytic focus, and write an ETL pipeline that transfers data from files in two local directories into these tables in Postgres. 
  - __Dataset:__
    - 1. Song Dataset(http://millionsongdataset.com/): The first dataset is a subset of real data from the Million Song Dataset. Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID.
@@ -56,7 +57,23 @@ Stack Exchange Data Explorer (SEDE) https://data.stackexchange.com/stackoverflow
    - 3. Build ETL Pipeline
      - Use what you've completed in `etl.ipynb` to complete `etl.py`, where you'll process the entire datasets. Remember to run `create_tables.py` before running `etl.py` to reset your tables. Run `test.ipynb` to confirm your records were successfully inserted into each table.
 
-
+### 3. Data Modeling with Cassandra
+> __Introduction:__ A startup called Sparkify wants to analyze the data they've been collecting on songs and user activity on their new music streaming app. The analytics team is particularly interested in understanding **what songs users are listening to**. 
+ - > Currently, there is no easy way to query the data to generate the results, since the data reside in a directory of CSV files on user activity on the app. 
+ - __Dataset:__
+   - For this project, you'll be working with one dataset: `event_data`. The directory of CSV files partitioned by date. 
+ - __Steps to follow:__
+   - 1. Modeling your NoSQL database
+     - Design tables to answer the queries outlined in the project template
+     - Write Apache Cassandra `CREATE KEYSPACE and `SET KEYSPACE` statements
+     - Develop your `CREATE` statement for each of the tables to address each question
+     - Load the data with `INSERT` statement for each of the tables
+     - Include `IF NOT EXISTS` clauses in your **CREATE statements** to create tables only if the tables do not already exist. We recommend you also include **DROP TABLE statement** for each table, this way you can run drop and create tables whenever you want to reset your database and test your ETL pipeline
+     - Test by running the proper select statements with the correct `WHERE clause`
+   - 2. Build ETL Pipeline
+     - Implement the logic in section Part I of the notebook template to iterate through each event file in `event_data` to process and create a new CSV file in Python
+     - Make necessary edits to Part II of the notebook template to include Apache Cassandra `CREATE` and `INSERT` statements to load processed records into relevant tables in your data model
+     - Test by running `SELECT` statements after running the queries on your database
 
 
 
